@@ -1,0 +1,128 @@
+.whyUs .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    /* transition: all ease-in; */
+    background: #1a1814;
+}
+
+.whyUs .box span {
+    /* transition: all ease-in; */
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #cda45e;
+}
+
+.whyUs .box h4 {
+    /* transition: all ease-in; */
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: #aaaaaa;
+}
+
+.whyUs .box p {
+    /* transition: all ease-in; */
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.whyUs .box:hover {
+    background-image: linear-gradient(to top, #cda45e, rgb(255, 226, 164));
+    /* padding: 40px 30px 70px 40px; */
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.whyUs .box:hover span,
+.whyUs .box:hover h4,
+.whyUs .box:hover p {
+    color: #c82127;
+}
+
+.section-title .small-text {
+    display: none;
+}
+
+.mobileBoxView {
+    display: none;
+    visibility: hidden;
+}
+
+.whyUsMobile {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .section-title .small-text {
+        display: inline-block;
+    }
+
+    .whyUsMobile {
+        display: block;
+    }
+
+    .whyUsDesktop {
+        display: none;
+    }
+
+    .pcBoxView {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mobileBoxView {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .mobileBoxView .boxNo {
+        margin-right: 25px;
+    }
+
+    .whyUs .box span {
+        font-size: 24px;
+    }
+
+    .whyUs .box {
+        height: 170px;
+        width: 90%;
+        margin-left: 5%;
+        padding: 15px 10px 14px 18px;
+    }
+
+    .whyUs .box:hover {
+        background: #1a1814;
+        padding: 15px 10px 14px 18px;
+        box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .whyUs .box:hover span,
+    .whyUs .box:hover h4,
+    .whyUs .box:hover p {
+        color: #aaaaaa;
+    }
+
+    .boxNo {
+        color: #c82127 !important;
+    }
+
+    .whyUs .box h4 {
+        margin: 5px 0;
+    }
+
+    .whyUs .box p {
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 280px) {
+    .whyUs .box {
+        height: 190px;
+    }
+}

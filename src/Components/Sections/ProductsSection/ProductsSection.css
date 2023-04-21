@@ -1,0 +1,295 @@
+/*--------------------------------------------------------------
+# Menu Section
+--------------------------------------------------------------*/
+
+/* Filter */
+.zoom {
+    position: relative;
+    transition: all 500ms ease-in;
+    transform: scale(1);
+    z-index: 1;
+    color: rgba(0, 0, 0, 0);
+    transform-origin: left;
+}
+
+.zoom:hover {
+    transform: scale(2.5);
+    z-index: 200;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    color: #cda45e;
+}
+
+.none {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-img {
+    position: relative;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    border: 5px solid rgba(14, 5, 5, .5);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    margin-top: -4px;
+}
+
+
+.menu-content {
+    margin-left: 85px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* padding-bottom: 5px; */
+}
+
+.menu-content::after {
+    content: "......................................................................"
+        "...................................................................."
+        "....................................................................";
+    position: absolute;
+    left: 20px;
+    right: 0;
+    top: -4px;
+    z-index: 1;
+    color: #575552;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.menu-content span {
+    background: #1a1814;
+    position: relative;
+    z-index: 3;
+    font-weight: 700;
+    color: white;
+    transition: .3s;
+    padding: 0;
+}
+
+.price,
+.abbrevation {
+    color: #cda45e !important;
+    font-size: 16px;
+}
+
+.derivations {
+    color: #aaa;
+}
+
+.menu-ingredients {
+    margin-left: 85px;
+    font-style: italic;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: hsla(0, 0%, 100%, .5);
+    font-weight: 600;
+}
+
+.calorie {
+    color: rgb(0, 174, 240);
+    margin-top: 8px;
+}
+
+/* Filters styling */
+.season {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.season-button {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.season-button button {
+    outline: none;
+    border: 1px solid #cda45e;
+    margin-right: 18px;
+    margin-top: 8px;
+    border-radius: 50px;
+    font-size: 17px;
+    color: white;
+    transition: 0.5s ease-in-out;
+    padding: 4px 12px;
+    background: transparent;
+    font-family: "Playfair Display", serif;
+}
+
+.season-button .active {
+    background: #cda45e;
+    color: black;
+    padding: 4px 12px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    margin: 18px 0 0 0;
+    padding: 0;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    transition: all ease-in-out 0.3s;
+    color: white;
+    cursor: pointer;
+}
+
+#grocery-filters .active {
+    color: #cda45e;
+}
+
+.season-section {
+    padding-top: 20px;
+    /* padding-bottom: 25px; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.season-filters {
+    width: 100%;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.season-category {
+    width: 100%;
+}
+
+#menu {
+    padding: 70px 0 0 0;
+}
+
+.menu .menu-item {
+    padding-top: 5px;
+    padding-bottom: 32px;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .menu .menu-item-2 {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:520px) {
+    .season-button {
+        display: none;
+    }
+
+    .mobile-btn {
+        display: block;
+    }
+
+    .season-button button {
+        text-align: center;
+        padding: .3rem .4rem;
+        width: 95px;
+        height: 40px;
+        border-radius: 4px;
+        margin: .4rem auto 1rem;
+        font-size: 15px;
+        font-weight: 600;
+        background-image: linear-gradient(45deg, #a11c20, rgb(61, 4, 4));
+        color: white;
+        box-shadow: -6px 6px 8px rgb(173 159 33 / 40%), 0 2px 2px rgb(173 159 33 / 40%);
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all .5s;
+        border: none;
+    }
+
+    .season-button .active {
+        padding: .4rem 0.5rem;
+        background-image: linear-gradient(45deg, #c82127, #cda45e) !important;
+        color: white !important;
+        border: none;
+    }
+
+
+
+    .season-section {
+        padding-top: 20px;
+        padding-bottom: 28px;
+    }
+
+    .menu .menu-item {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    .menu .menu-img {
+        margin-top: 0;
+    }
+
+    .menu .menu-content span {
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .menu .menu-ingredients {
+        /* margin-top: -10%; */
+        width: 70%;
+        padding: 0 5px;
+        font-size: 13px;
+    }
+
+    .calorie {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: left;
+        font-size: 14px;
+    }
+
+    .season {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width:521px) and (max-width:780px) {
+    .season-button .active {
+        padding: 5px 8px;
+        font-size: 15px;
+    }
+
+    .season-button button {
+        font-size: 15px;
+        padding: 5px 8px;
+    }
+
+    .menu .menu-item {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    .season-button button {
+        margin: 4px 4px;
+    }
+}
+
+@media (min-width:781px) and (max-width:1024px) {
+    .menu .menu-item {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+}

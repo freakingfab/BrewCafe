@@ -1,0 +1,123 @@
+.topbarIcon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #cda45e;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbarIcon i {
+    font-size: 10px;
+}
+
+.contactDays {
+    display: inline-flex !important;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.contactInfo i {
+    color: #d9ba85;
+}
+
+.contactInfo i+i {
+    margin-left: 15px;
+}
+
+/* timings */
+.contactDays {
+    margin-left: 15px;
+    color: #d9ba85;
+    position: absolute;
+    cursor: pointer;
+    padding-bottom: 11px;
+}
+
+.contactDays i {
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.contactDays:hover .timings {
+    display: block;
+    left: -96px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.timings {
+    width: 165px;
+    position: absolute;
+    top: 31px;
+    left: -360px;
+    /* background: black; */
+    cursor: text;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.timings ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.timings ul li {
+    background-image: linear-gradient(to right,
+            rgba(2, 2, 2, 0.9),
+            rgba(29, 29, 29, 0.9),
+            rgba(0, 0, 0, 0.9));
+    padding: 10px 0;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+    cursor: default;
+}
+
+.timings ul li:first-child {
+    border-top: none;
+}
+
+.timings ul li span {
+    margin-right: 10px;
+    color: #cda45e;
+    font-size: 13px;
+}
+
+@media (max-width: 580px) {
+    .contactDays:hover .timings {
+        left: -86px;
+    }
+}
+
+.languageSelector {
+    color: #cda45e;
+    background-color: #0c0b09;
+    border-radius: 3px;
+    border-color: #cda45e;
+}
+
+.languages {
+    max-height: 20px;
+}
+
+.languageSelector select option {
+    background-color: violet;
+}
+
+.languages ul .linker {
+    display: inline-block;
+}
+
+.languages ul li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    content: "/";
+}

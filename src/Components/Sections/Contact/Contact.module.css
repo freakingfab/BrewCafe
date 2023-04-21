@@ -1,0 +1,194 @@
+.contactRow {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactCol {
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.contactCol .info {
+    display: flex;
+    width: 100%;
+}
+
+.contactCol .info div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactUs {
+    padding-left: 0 !important;
+}
+
+.contactIconsMargin {
+    margin-left: 5px;
+}
+
+.contactIcon {
+    color: #fff;
+}
+
+.contactIcon:hover {
+    color: white;
+}
+
+.bottomTime {
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.bottomTime p i {
+    padding-right: 10px;
+}
+
+.bottomTime:hover .timingsBottom ul {
+    display: block;
+}
+
+.timingsBottom {
+    right: -5%;
+    width: 165px;
+    position: absolute;
+    top: -230px;
+    /* background: black; */
+    transition: 0.3s ease-in-out;
+}
+
+.timingsBottom ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.timingsBottom ul li {
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.9),
+            rgba(19, 19, 19, 0.9),
+            rgba(0, 0, 0, 0.9));
+    padding: 10px 0;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.timingsBottom ul li span {
+    margin-right: 10px;
+    color: #cda45e;
+    font-size: 13px;
+}
+
+.contact .address i,
+.contactIconsMargin i {
+    font-size: 20px;
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact .info p {
+    padding: 0 0 0 5px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+}
+
+.verticalCenterDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: fit-content;
+}
+
+.contact .email,
+.phone,
+.whatsapp,
+.telegram {
+    margin: 5px;
+}
+
+@media (min-width: 767px) {
+    .openHours {
+        margin: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .contactRow {
+        margin-top: 30px;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .openHours {
+        margin-right: 0px;
+    }
+
+    .contactCol {
+        /* flex-basis: 30%; */
+        /* margin-top: 10px; */
+        margin: 0px 180px 0px 20px;
+        display: block;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .contactCol .info {
+        display: flex;
+        width: 100%;
+    }
+
+    .timingsBottom {
+        left: -33%;
+    }
+
+    .times {
+        margin-left: 37%;
+    }
+
+    .mailPhone {
+        margin-left: 30% !important;
+    }
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

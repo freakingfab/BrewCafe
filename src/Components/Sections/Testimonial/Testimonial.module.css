@@ -1,0 +1,71 @@
+.testimonials {
+    background: black;
+}
+
+.testimonials .testimonialItem {
+    box-sizing: content-box;
+    min-height: 320px;
+}
+
+.testimonials .testimonialItem .testimonialImg {
+    width: 90px;
+    border-radius: 50%;
+    margin: -40px 0 0 40px;
+    position: relative;
+    z-index: 2;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+}
+
+.testimonials .testimonialItem h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 45px;
+    color: white;
+}
+
+.testimonials .testimonialItem h4 {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 0 45px;
+}
+
+.reviewBox {
+    padding: 15px 10px 40px 0px;
+    background: #26231d;
+    margin: 0 15px 0 15px;
+}
+
+.reviewBox p {
+    height: 180px;
+    overflow-y: auto;
+    font-style: italic;
+    padding: 0px 20px 0px 20px;
+    background: #26231d;
+    position: relative;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials ::-webkit-scrollbar {
+    width: 1.2px;
+}
+
+.testimonials ::-webkit-scrollbar-track {
+    background: #26231d;
+    border-radius: 150px;
+}
+
+/* Handle */
+.testimonials ::-webkit-scrollbar-thumb {
+    background: rgb(252, 233, 234);
+    border-radius: 5px;
+}
+
+@media (max-width: 410px) {
+    .reviewBox p {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {}

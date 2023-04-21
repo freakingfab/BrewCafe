@@ -1,0 +1,157 @@
+.companyHeader {
+    font-size: 14px;
+}
+
+.logo {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo a {
+    color: #fff;
+}
+
+.logo img {
+    max-height: 40px;
+}
+
+/* Desktop Navigation */
+
+.navMenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navMenu>ul {
+    display: flex;
+    align-items: center;
+}
+
+.navMenu>ul>li {
+    position: relative;
+    white-space: nowrap;
+    padding-left: 28px;
+}
+
+.navMenu p {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0;
+    position: relative;
+    color: white;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navMenu p:hover,
+.navMenu .active>p,
+.navMenu li:hover>p {
+    color: #d9ba85;
+}
+
+.navMenu .book-a-table p {
+    border: 2px solid #cda45e;
+    color: #fff;
+    border-radius: 50px;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navMenu .book-a-table p:hover {
+    background: #cda45e;
+    color: #fff;
+}
+
+.navMenu .drop-down ul {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: calc(100% + 30px);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+
+.navMenu .drop-down:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.navMenu .drop-down li {
+    min-width: 180px;
+    position: relative;
+}
+
+.navMenu .drop-down ul p {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    color: #1a1814;
+}
+
+.navMenu .drop-down ul a:hover,
+.navMenu .drop-down ul .active>a,
+.navMenu .drop-down ul li:hover>a {
+    color: #cda45e;
+}
+
+.navMenu .drop-down>a:after {
+    content: "\ea99";
+    font-family: IcoFont;
+    padding-left: 5px;
+}
+
+.navMenu .drop-down .drop-down ul {
+    top: 0;
+    left: calc(100% - 30px);
+}
+
+.navMenu .drop-down .drop-down:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+}
+
+.navMenu .drop-down .drop-down>a {
+    padding-right: 35px;
+}
+
+.navMenu .drop-down .drop-down>a:after {
+    content: "\eaa0";
+    font-family: IcoFont;
+    position: absolute;
+    right: 15px;
+}
+
+@media (max-width: 1366px) {
+    .navMenu .drop-down .drop-down ul {
+        left: -90%;
+    }
+
+    .navMenu .drop-down .drop-down:hover>ul {
+        left: -100%;
+    }
+
+    .navMenu .drop-down .drop-down>a:after {
+        content: "\ea9d";
+    }
+}
+
+/* Mobile Navigation are on global css */
